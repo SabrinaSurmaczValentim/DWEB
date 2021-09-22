@@ -20,5 +20,30 @@
 
         <h3>Incorporar vídeos ao site</h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/fYJl-7jRzuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h2>Tag vídeo</h2>
+        <p>Usada para inserir vídeos, presentes na máquina local, ou em um servidor de hospedagem.</p>
+        <video poster="vídeo/Bike.jpg" controls>
+            <source src="vídeo/_Bike.mp4" type="video/mp4">
+            <source src="vídeo/Bike.webm" type="video/webm">
+            <source src="vídeo/Bike.ogv" type="video/ogv">
+        </video>
+
+        <h2>Tag de áudio</h2>
+        <p>Da mesma forma que com vídeos, pode fazer a inserção de áudios que estão localmente armazenados ou estão em um servidor.Para conseguir áudio sem direitos autorais, há uma Biblioteca de áudio no YouTube.</p>
+        <audio preload="metadata" controls>
+            <source src="áudio/Hey Sailor - Letter Box.mp3" type="audio/mp3">
+            <source src="áudio/Hey Sailor - Letter Box.ogg" type="audio/ogg">
+            <source src="áudio/Hey-Sailor-Letter-Box.wav" type="audio/wav">
+        </audio>
+
+        <h2>Tag Picture</h2>
+        <p>Tag de agrupamento de imagens.</p>
+        <picture>
+            <source media="(max-width:500px)" srcset="img/bike_110.jpg">
+            <source media="(max-width:700px)" srcset="img/bike_320.jpg">
+            <source media="(max-width:1000px)" srcset="img/bike_640.jpg">
+            <img src="img/bike_full.jpg" alt="Mtb Por-do-sol">
+        </picture>
 </body>
 </html>
